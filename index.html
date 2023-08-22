@@ -1,125 +1,281 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Responsive Layout</title>
-        <link rel="stylesheet" href="css/style.css" />
-    </head>
-
-    <body>
-        <header>
-            <div class="container">
-                <div class="row debug">
-                    <div class="col debug">LOGO</div>
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Font Awesome  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <!-- custom CSS -->
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Layout 1</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="row debug">
+                <div class="col debug">
+                    <img src="./img/logo.png" alt="logo">
+                    </div>
                     <div class="col debug">
-                        <nav class="menu">MENU</nav>
-                        <div class="hamburger">H</div>
+                    <nav class="menu">
+                        <ul class="d-flex ai-center"> 
+                            <li><a href="#planing">Planning</a></li>
+                            <li><a href="#testimonials">Testimonials</a></li>
+                            <li><a href="#benefits">Features</a></li>
+                            <li><a href="#about">About Us</a></li>
+                            <li class="button d-flex ai-center jc-center"><a href="#"> Get Started </a></li>
+                        </ul>
+                    </nav>
+                    <div class="hamburger">
+                        <p><a href="#"><i class="fa-solid fa-bars"></i></a></p>
                     </div>
                 </div>
             </div>
-        </header>
+        </div>
+    </header>
 
-        <main>
-
-            <section class="intro">
-                <div class="container">
-                    <div class="row debug">
-                        <div class="col debug">
-                            <div class="row">
-                                <div class="col debug">SX</div>
-                                <div class="col debug">DX</div>
+    <main>
+        <section id="intro">
+            <div class="container">
+                <div class="row debug">
+                    <div class="col debug">
+                        <div class="row">
+                            <div class="col debug">
+                                <h2>Get a demo application</h2>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam numquam voluptate mollitia libero nostrum eveniet quaerat at aspernatur quasi aliquam!</p>
+                                <div class="button">
+                                    <a href="#"><i class="fa-brands fa-apple"></i> App Store</a>
+                                </div>
+                            <div class="col debug">
+                                <img src="./img/phone.png" alt="phone">
                             </div>
                         </div>
-                        <div class="col debug">2</div>
-                        <div class="col debug">3</div>
-                        <div class="col debug">4</div>
-                        <div class="col debug">5</div>
+                    </div>
+                    <div class="col debug">
+                        <div class="card">
+                            <div class="silhuete">
+                                <i class="fa-solid fa-file-code"></i>
+                              </div>
+                              <h2>Clean Code</h2>
+                              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptate eum aut a consectetur. Veniam, facere quia? Provident suscipit eligendi quam.</p>
+                        </div>
+                    </div>
+                    <div class="col debug">
+                        <div class="card">
+                            <div class="silhuete">
+                                <i class="fa-solid fa-compass-drafting"></i>
+                              </div>
+                              <h2>Web Design</h2>
+                              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptate eum aut a consectetur. Veniam, facere quia? Provident suscipit eligendi quam.</p>
+                        </div>
+                    </div>
+                    <div class="col debug">
+                        <div class="silhuete">
+                            <i class="fa-solid fa-laptop-code"></i>
+                          </div>
+                          <h2>Developement</h2>
+                          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptate eum aut a consectetur. Veniam, facere quia? Provident suscipit eligendi quam.</p>
+                    </div>
+                    <div class="col debug">
+                        <div class="silhuete">
+                            <i class="fa-solid fa-bullhorn"></i>
+                          </div>
+                          <h2>Branding</h2>
+                          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptate eum aut a consectetur. Veniam, facere quia? Provident suscipit eligendi quam.</p>
+                        </div>
                     </div>
                 </div>
-            </section>
-
-            <section class="planning">
-                <div class="container">
-                    <div class="row debug">
-                        <div class="col debug">planning</div>
-                        <div class="col debug">2</div>
+            </div>
+        </section>
+        <section id="planning">
+            <div class="container">
+                <div class="row debug">
+                    <div class="col debug">
+                        <div class="first-image">
+                            <img src="./img/planning1.png" alt="planing 1">
+                          </div>
+                          <div class="text">
+                            <h2>Strategic Planing</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi similique deleniti ipsum non autem sint tempore soluta reiciendis neque cum porro optio earum harum nobis quia, doloremque illum delectus architecto natus quos est eveniet facilis?</p>
+                          </div>
+                        </div>
+                    </div>
+                    <div class="col debug">  
+                        <div class="card">
+                            <div class="second-image">
+                                <img src="./img/planning2.png" alt="planing 2">
+                            </div>
+                            <div class="text">
+                            <h3>App Developement</h3>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. A, odio quidem illo rerum nesciunt consectetur dolorem recusandae consequuntur est fugit.</p>
+                            </div>
+                            <div class="button">
+                                <span><i class="fa-solid fa-arrow-down"></i></span>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </section>
-
-            <section class="testimonials">
-                <div class="container">
-                    <div class="top">TEXT TESTIMONIALS</div>
-                    <div class="cards">
-
-                        <div class="card debug">
-                            <div class="row debug">
-                                <div class="col debug">THUMB</div>
-                                <div class="col debug">TEXT</div>
+        </section>
+        <section id="testimonials">
+            <div class="container">
+                <div class="top">
+                    <h3>TESTIMONIALS</h3>
+                    <h2>We are committed expert partners</h2>
+                    <p>we place huge value on strong relationships and have seen the benefits they bring to our business. Customer feedbacl is vital in helping us to get right</p>
+                </div>
+                <div class="cards">
+                    <div class="card debug">
+                        <div class="row debug">
+                             <div class="col debug">
+                                <img src="./img/testimonial1.jpg" alt="testimonial1" class="user-pic">
+                            </div>
+                            <div class="col debug">
+                                <p><span>"</span>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet expedita maiores neque accusamus architecto voluptates, repellendus molestias pariatur quidem impedit fugiat quas<span>"</span></p>
+                                <h4>NAT REYNOLDS</h4>
                             </div>
                         </div>
-
-                        <div class="card debug">
-                            <div class="row debug">
-                                <div class="col debug">THUMB</div>
-                                <div class="col debug">TEXT</div>
+                    </div>
+                    <div class="card debug">
+                        <div class="row debug">
+                            <div class="col debug">
+                                <img src="./img/testimonial2.jpg" alt="testimonial2" class="user-pic">
+                            </div>
+                            <div class="col debug">
+                                <p><span>"</span>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet expedita maiores neque accusamus architecto voluptates, repellendus molestias pariatur quidem impedit fugiat quas <span>"</span></p>
+                                <h4>CELIA ALMEDA</h4>
                             </div>
                         </div>
-
-                        <div class="card debug">
-                            <div class="row debug">
-                                <div class="col debug">THUMB</div>
-                                <div class="col debug">TEXT</div>
+                    </div>
+                    <div class="card debug">
+                        <div class="row debug">
+                            <div class="col debug">
+                                <img src="./img/testimonial3.jpg" alt="testimonial3" class="user-pic">
+                            </div>
+                            <div class="col debug">
+                                <p><span>"</span>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet expedita maiores neque accusamus architecto voluptates, repellendus molestias pariatur quidem impedit fugiat quas <span>"</span></p>
+                                <h4>ROB ROBERTS</h4>
                             </div>
                         </div>
-
-                        <div class="card debug">
-                            <div class="row debug">
-                                <div class="col debug">THUMB</div>
-                                <div class="col debug">TEXT</div>
-                            </div>
-                        </div>
-
-                        <div class="card debug">
-                            <div class="row debug">
-                                <div class="col debug">THUMB</div>
-                                <div class="col debug">TEXT</div>
-                            </div>
-                        </div>
-                        
                     </div>
                 </div>
-            </section>
-
-            <section class="benefits">
-                <div class="container">
-                    <div class="top">TEXT BENEFITS</div>
-                    <div class="row debug">
-                        <div class="col debug">1</div>
-                        <div class="col debug">2</div>
-                        <div class="col debug">3</div>
-                        <div class="col debug">4</div>
-                        <div class="col debug">5</div>
-                        <div class="col debug">6</div>
+            </div>
+        </section>
+        <section id="benefits">
+            <div class="container">
+                <div class="top">
+                    <h2>Benefits of working with us</h2>
+                </div>
+                <div class="row debug">
+                    <div class="col debug">
+                        <div class="card">
+                            <h2>01</h2>
+                            <h3>Hight Quality</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium tempore temporibus facilis aut magnam. Odio.</p>
+                            <div class="button">
+                                <a href="#">More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col debug">
+                        <div class="card">
+                            <h2>02</h2>
+                            <h3>Creative Team</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium tempore temporibus facilis aut magnam. Odio.</p>
+                            <div class="button">
+                                <a href="#">More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col debug">
+                        <div class="card">
+                            <h2>03</h2>
+                            <h3>Amazing results</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium tempore temporibus facilis aut magnam. Odio.</p>
+                            <div class="button">
+                                <a href="#">More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col debug">
+                        <div class="card">
+                            <h2>04</h2>
+                            <h3>Best Pricing</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium tempore temporibus facilis aut magnam. Odio.</p>
+                            <div class="button">
+                                <a href="#">More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col debug">
+                        <div class="card">
+                            <h2>05</h2>
+                            <h3>Innovatins</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium tempore temporibus facilis aut magnam. Odio.</p>
+                            <div class="button">
+                                <a href="#">More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col debug">
+                        <div class="card">
+                            <h2>06</h2>
+                            <h3>24/7 Support</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium tempore temporibus facilis aut magnam. Odio.</p>
+                            <div class="button">
+                                <a href="#">More</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </section>
-
-            <section class="about">
-                <div class="container">
-                    <div class="row debug">
-                        <div class="col debug">ABOUT TEXT</div>
-                        <div class="col debug">IMG</div>
+            </div>
+        </section>
+        <section id="about">
+            <div class="container">
+                <div class="row debug">
+                    <div class="col debug">
+                        <h2>About Us</h2>
+                        <p>Sample text. Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste nostrum, dolorum mollitia in possimus sed accusamus, impedit praesentium ullam dignissimos numquam hic consectetur excepturi enim quaerat necessitatibus dolores, dolor sit doloribus qui laboriosam labore! Et molestias deserunt voluptatibus. Beatae architecto, laborum ipsam excepturi ipsum vitae molestiae voluptatibus illo voluptates accusamus.</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A, magnam eum omnis culpa inventore veritatis reiciendis saepe voluptatem rem, fuga qui asperiores odio doloremque similique laborum iste? Atque dolores repellendus facere accusamus velit. Maxime rerum doloremque officia ea quidem, quasi nesciunt vero sed nemo? Minus molestiae voluptatum commodi rerum facere!</p>
+                    </div>
+                    <div class="col debug">
+                        <div class="user">
+                            <img src="./img/about.jpg" alt="about" class="user-pic">
+                            <div class="comillas">
+                                <span>"</span>
+                                <h4>I help companies tincidunt tortor aliquam nulla facilisi cras fermentum odio"</h4>
+                                <div class="button">
+                                    <a href="#"><i class="fa-brands fa-linkedin"></i> Find me on linkedin</a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </section>
-
-            <section class="getstarted debug">CTA</section>
-        </main>
-
-        <footer class="debug">FOOTER</footer>
-       
+            </div>
+        </section>
+        <section id="get-started">
+            <div class="container d-flex fd-column ai-center">
+                <h2 class="title">GET STARTED</h2>
+                <h2 class="description">Simple, Transparent Pricing</h2>
+                <span class="free">It`s Free!</span>
+                <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur consequatur aut aliquid sit impedit pariatur nesciunt! Eos expedita accusantium ducimus quo sit atque at earum?</p>
+                <div class="button d-flex ai-center jc-center">
+                    <a href="#">Get Started</a>
+                </div>
+                <p class="copyright">Copyright 2021 Boolean &middot; Classe XX &middot; <a href="#">privacy policy</a></p>
+            </div>
+        </section>
+    </main>
+    <footer class="debug">
+        <div class="container">
+            <p class="main-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, ab possimus quae aperiam voluptatum eveniet.</p>
+            <p><a href="#">Lorem ipsum</a> Lorem, ipsum dolor <br>
+            <a href="#">Boolean Careers</a></p>
+        </div>
+    </footer>
     </body>
 </html>

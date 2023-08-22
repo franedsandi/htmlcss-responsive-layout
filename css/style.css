@@ -56,14 +56,6 @@ header .row .menu{
 
 @media screen and (min-width:768px) {
 
-    header .row .menu{
-        display: block;
-    }
-
-    header .row .hamburger{
-        display: none;
-    }
-
     .intro .col{
         width: calc(100% / 3);
     }
@@ -94,6 +86,14 @@ header .row .menu{
 }
 
 @media screen and (min-width:992px){
+    header .row .menu{
+        display: block;
+    }
+
+    header .row .hamburger{
+        display: none;
+    }
+
     .intro .col:first-child .row{
         flex-direction: row;
     }

@@ -22,33 +22,115 @@
 
 
 /* HEADER */
+header{
+    background-color:#0084FD ;
+    z-index: 999;
+    position: fixed;
+    width: 100%;
+
+}
+header .container{
+    width: 90%;
+}
 header .row{
     justify-content: space-between;
     align-items: center;
     height: 50px;
 }
-
-header .row .menu{
-    display: none; 
-}
-header .row .menu ul{
+header .row .col{
     display: flex;
-    align-items: center;
     justify-content: center;
-
-
+    align-items: center;
 }
-header .row .menu ul li{
-    margin-left: 5px;
+
+header a{
+    color: white;
+  }
+  header a:active{
+    color: lightgray
+  }
+  .menu {
+    display: none;
+  }
+  .menu ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .menu ul li {
+    margin-left: 10px;
     list-style: none;
-
-}
-
+  }
+  .menu a{
+    text-decoration: none;
+  }
+  .menu .button{
+    background-color: #ffffff;
+    width: 100px;
+    height: 30px;
+    border-radius: 50px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .menu .button:hover{
+    cursor: pointer;
+  }
+  .menu .button a{
+    color: black;
+  }
 /* MAIN */
-#intro .row{
+
+#intro{
+    padding:55px 0px;
+}
+#intro .row {
+    display:flex;
     flex-wrap: wrap;
 }
+#intro .card{
+    text-align: center;
+    clear: both;
+}
 
+#intro .card h2{
+    color: #0084FD;
+}
+#intro .silhuete{
+    font-size: 75px;
+    color: #0084FD;
+}
+#intro .col img{
+    height: 350px;
+}
+#intro .card{
+    background-color: #B5DDFF;
+    margin: 20px 20px 0px;
+    padding: 20px;
+    border-radius: 20px;
+}
+#intro .big.card{
+    padding-bottom: 0;
+    margin-bottom: 0;
+    text-align: left;
+}
+#intro .card h2 {
+    padding-bottom: 20px;
+}
+#intro .card .button{
+    background-color: #0084FD;
+    width: 150px;
+    text-align: center;
+    padding: 10px 15px;
+    border-radius: 30px;
+    font-size: 20px;
+    margin: 40px 0px;
+}
+#intro .card .button a{
+    color: white;
+    text-decoration: none;
+}
 #intro .col:first-child .row,
 #planning .row,
 #testimonials .row,
@@ -57,12 +139,156 @@ header .row .menu ul li{
 {
     flex-direction: column;
 }
+#planning{
+    background-color: #9792E4;
+    padding: 50px;
+}
 
+#planning .second{
+    display: flex;
+    justify-content: center;
+}
+#planning img{
+    width: 100%;
+}
+#planning .text-one{
+    color: white;
+}
+#planning .texto-one h2{
+    margin: 20px 0px;
+    font-size: 30px;
+}
+#planning .text-one p{
+    padding: 20px 0px;
+}
+#planning .card {
+    background-color: white;
+    border-radius: 30px;
+    padding: 30px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#planning .card h3{
+    margin: 10px 0px;
+}
+#planning .card p{
+    font-style: italic;
+    margin: 20px 0px;
+}
+#planning .card .button{
+
+    border-radius: 50%;
+    background-color: #9792E4;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#testimonials{
+    margin: 50px 0px;
+}
+#testimonials .top{
+    text-align: center ;
+}
+#testimonials .top h2{
+    font-size: 15px;
+}
+#testimonials .top h3{
+    font-size: 25px;
+    color: #9792E4;
+    margin: 20px 0px;
+}
+#testimonials .top p{
+    margin-bottom: 30px;
+}
+#testimonials .card{
+    background-color: #9792E4;
+    margin: 10px;
+    padding: 20px ;
+    border-radius: 30px;
+    text-align: center;
+}
+
+#testimonials .one{
+    width: 100%;
+    object-fit: contain;
+    display: flex;
+    justify-content: center;
+
+}
+#testimonials .one img{
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+
+}
+#testimonials .two{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+    padding-left: 20px;
+}
+#benefits{
+    background-color: #9792E4;
+    padding: 50px 0px;
+}
+#testimonials span{
+    font-size: 30px;
+    font-weight: bold;
+}
+#testimonials p{
+    padding-bottom: 10px;
+}
+#benefits .container .top{
+    color: white;
+    font-size: 30px;
+    padding-bottom: 30px;
+    text-align: center;
+}
+#benefits .container .card{
+    background-color: white;
+    border-radius: 20px;
+    padding: 20px;
+    margin:20px;
+}
+#benefits .container .card h2{
+    color: #9792E4;
+    font-size: 40px;
+}
+#benefits .container .card h3{
+    color: #9792E4;
+    font-size: 20px;
+    margin: 10px 0px;
+}
+#benefits .container .card p{
+    padding: 15px 0px;
+}
+#benefits .container .card .button{
+    background-color: #9792E4;
+    border-radius: 50px;
+    font-size: 20px;
+    padding: 5px 15px;
+    width: 100px;
+    text-align: center;
+}
+#benefits .container .card .button a{
+    text-decoration: none;
+    color: white;
+}
 #benefits .row{
     flex-wrap: wrap;
 }
+
 #about{
     padding: 50px 0px;
+}
+#about .container :first-child{
+    margin: 0px 20px;
+
 }
 #about h2{
     color: #9792E4;
@@ -74,11 +300,19 @@ header .row .menu ul li{
 #about .user{
     position: relative;
     width: 200px ;
+    color:#9792E4
 }
 #about .user img{
     width: 100%;
     border-radius: 50%;
 }
+#about .comillas{
+    font-size: 400px;
+    position: absolute;
+    top: -125px;
+    right: -75px;
+}
+
 #about .user .button{
     background-color:#9792E4;
     text-align: center;
@@ -88,7 +322,10 @@ header .row .menu ul li{
 #about .user .button a{
     color: white;
     text-decoration: none;
-
+    margin: 0px;
+}
+#about .user .button i{
+    margin: 0px;
 }
 #get-started{
     background-color: #9792E4;
@@ -150,19 +387,29 @@ footer a{
 
 @media screen and (min-width:768px) {
 
-    #intro .col{
-        width: calc(100% / 3);
+    #intro .container .grid{
+        display: grid; 
+        grid-template-columns: 1fr 1fr 1fr;
     }
-    
-    #intro .col:first-child{
-        width: 66.6666%;
+    #intro .grid :first-child{
+        grid-area: 1/1/2/3;
     }
-
+    #intro .grid :nth-child(2){
+        grid-area:1/3/2/3 ;
+    }
+    #intro .grid :nth-child(2) .card{
+        height: calc(100% - 20px);
+    }
     #planning .row,
     #benefits .row,
     #about .row,
     #testimonials .row{
         flex-direction: row;
+        justify-content: space-between;
+    }
+
+    #planning .container .col{
+    width: 45%;
     }
 
     #testimonials .row .col:first-child{
@@ -188,8 +435,13 @@ footer a{
         display: none;
     }
 
-    #intro .col:first-child .row{
+    .intro .col:first-child .row{
         flex-direction: row;
+    }
+    #intro .big.card{
+        display: flex;
+        padding-bottom: 0;
+        margin-bottom: 0;
     }
     #benefits .col{
         width: calc(100% / 3);
@@ -198,5 +450,4 @@ footer a{
     #get-started .container{
         width: calc( 100% / 3);
     }
-
 }

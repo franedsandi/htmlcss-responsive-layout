@@ -19,7 +19,9 @@
 .row{
     display: flex;
 }
-
+.button:hover{
+    cursor: pointer;
+  }
 
 /* HEADER */
 header{
@@ -73,9 +75,6 @@ header a{
     display: flex;
     justify-content: center;
     align-items: center;
-  }
-  .menu .button:hover{
-    cursor: pointer;
   }
   .menu .button a{
     color: black;
@@ -399,16 +398,15 @@ footer a{
     #intro .grid :nth-child(2) .card{
         height: calc(100% - 20px);
     }
+    #planning .container .col{
+        width: calc(100% / 2 - 20px);
+        }
     #planning .row,
     #benefits .row,
     #about .row,
     #testimonials .row{
         flex-direction: row;
         justify-content: space-between;
-    }
-
-    #planning .container .col{
-    width: 45%;
     }
 
     #testimonials .row .col:first-child{

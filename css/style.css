@@ -397,10 +397,19 @@ footer a{
     }
     #intro .grid :nth-child(2) .card{
         height: calc(100% - 20px);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
     }
     #planning .container .col{
         width: calc(100% / 2 - 20px);
         }
+    #planning .container .card{
+        margin-top: 25%;
+        width: 80%;
+        margin-left:20%;
+    }
     #planning .row,
     #benefits .row,
     #about .row,

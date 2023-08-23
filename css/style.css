@@ -102,6 +102,7 @@ header a{
 }
 #intro .col img{
     height: 350px;
+    align-self: flex-end;
 }
 #intro .card{
     background-color: #B5DDFF;
